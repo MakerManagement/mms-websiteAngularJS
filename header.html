@@ -1,0 +1,27 @@
+<div id="language-chooser">
+		<ul>
+			<li><a href="#"role="button" ng-click="fetchCatagoriees()">Home</a></li>
+			<li>|</li>
+			<li><a href="admin.php">Admin</a></li>
+			<li>|</li>
+			<li><a href="javascript:setParam('lang', 'en')">English</a></li>
+			<li>|</li>
+			<li><a href="javascript:setParam('lang','no')">Norsk</a></li>
+		</ul>
+	</div>
+
+	<div id="top-banner">
+		<div id="wrapper-logo">
+			<a href="/" ><img class="resize_fit_center" src="sources/logos/logo-lang.png" alt="MakerSpace logo" /></a>
+		</div>
+
+		<div class="search-box">
+			<div class="search-wrapper ui-widget">
+				<form action="/sources/background_php/searchQuery.php" method="GET">
+					<span class="icon"><i class="fa fa-search"></i></span>
+					<input name="q" type="search" id="search" placeholder="Search for item">
+					<input type="submit" id="search-submit" hidden>
+				</form>
+			</div>
+		</div>
+	</div>

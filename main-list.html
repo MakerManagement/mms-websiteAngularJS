@@ -1,0 +1,19 @@
+
+<div id="main-content" ng-if="items.Response!=='False'">
+	<ul id="main-list">
+		<li style="display: list-item;"  ng-repeat="item in items | reverse">
+			<a href="itempage.php?item={{ item._id }}" class="item-box">
+				<p class="item-header-list">{{ item.item_name }}</p>
+				<!-- Removed for now
+				<span class="text ellipsis">
+					<span class="text-concat">
+						<p>
+							DJI mest avanserte teknologien kommer sammen i en enkel å bruke, alt-i-ett  (...)
+						</p>
+					</span>
+				</span>
+				-->
+			</a>
+		</li>
+	</ul>
+</div>

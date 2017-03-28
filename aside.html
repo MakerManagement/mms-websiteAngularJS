@@ -1,0 +1,11 @@
+
+<div id="aside-box" ng-if="categories.Response!=='False'">
+	<aside>
+		<h2>CATEGORY</h2>
+		<ul id="category-list">
+			<li ng-repeat="cat in categories">
+				<a href="#" >{{ cat.category.en }}</a>
+			</li>
+		</ul>
+	</aside>
+</div>

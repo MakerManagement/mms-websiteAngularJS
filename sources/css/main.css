@@ -1,0 +1,239 @@
+:root{
+    --background_color: #4d5864;
+    --search_text_color: #81929d;
+}
+
+body{
+    background: var(--background_color);
+    color: white;
+}
+
+/*
+Edge support
+ */
+@supports (-ms-ime-align:auto) {
+    body{
+        background: #3e4854;
+        color: white;
+    }
+}
+
+#language-chooser{
+    margin-bottom: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#language-chooser li{
+    list-style: none;
+    display: inline;
+}
+
+#wrapper-logo {
+    height: 70px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+#top-banner{
+    padding-top: 25px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid;
+    border-color: white;
+}
+
+.search-box{
+    margin-left: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-wrapper{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search-wrapper input#search{
+    width: 700px;
+    height: 50px;
+    background: #3e4453;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: black;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+
+/* Different browsers, same goal. Set the color of the text in the input */
+
+.search-wrapper input#search::-webkit-input-placeholder {
+    color: var(--search_text_color);
+}
+
+.search-wrapper input#search:-moz-placeholder { /* Firefox 18- */
+    color: var(--search_text_color);
+}
+
+.search-wrapper input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: var(--search_text_color);
+}
+
+.search-wrapper input#search:-ms-input-placeholder {
+    color: #81929d;
+}
+
+.search-wrapper .icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+
+}
+
+.search-wrapper input#search:focus, .search-wrapper input#search:active{
+    outline:none;
+}
+
+.search-wrapper:hover .icon{
+    margin-top: 16px;
+    color: #93a2ad;
+
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
+}
+
+.search-wrapper input#search:hover, .search-wrapperinput#search:focus, .search-wrapper input#search:active .icon:hover{
+    outline:none;
+    background: #ffffff;
+}
+
+#main-body{
+    float: left;
+    width: 75%;
+}
+
+
+#main-body li a{
+    text-decoration: none;
+    width: 100%;
+}
+
+#main-list li{
+    border: solid red;
+    float: left;
+    list-style-type: none;
+    width: 25%;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+#aside-box{
+    float: left;
+    display: block;
+    margin-right: 40px;
+    border-right: solid;
+    padding-right: 15px;
+    width: 15%;
+}
+
+#aside-box a{
+    color: white;
+    text-decoration: none;
+}
+
+#aside-box li{
+    margin: 10px 0;
+}
+
+a{
+    color: white;
+}
+
+#main-list{
+    height: 1em;
+    line-height: 1em;
+}
+
+.item-header-list{
+    font-size: 150%;
+}
+
+.warning{
+    color: red;
+}
+
+/*
+To shorten the description text, this code is needed. Will create "..." after a long sentence
+ */
+
+.text{
+    position: relative;
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+    width: 25px;
+}
+
+.item-image-div{
+    height: 20em;
+    width: 20em;
+}
+
+#main-load-more{
+    margin-left: 40%;
+    float: left;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    background-color: #33739E;
+    color: #fff;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #4d5864;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+    text-decoration: none;
+}
+
+#main-load-more:hover{
+    background-color: #fff;
+    color: #33739E;
+}

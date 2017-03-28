@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MovieController"  class="ng-scope">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="sources/logos/icon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>Makerspace Management System</title>
+	<link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="sources/css/main.css" />
+    <!-- Importing font for search icon !-->
+    <link href="sources/css/font-awesome.min.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+  
+    <div ng-include="'header.html'"></div>
+
+	<div ng-include="'aside.html'"></div>
+	
+  <div id="main-body">
+		<h1>MakerSpace Inventory</h1>
+		<div ng-include="'main-list.html'"></div>
+	</div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
